@@ -18,7 +18,7 @@ interface Options {
 
 program
   .name('give-skill')
-  .description('Install skills onto coding agents (Claude Code, Cursor, Copilot, Gemini, Windsurf, Trae, Factory, OpenCode, Codex, Antigravity, Amp, Kilo, Roo, Goose)')
+  .description('Install skills onto coding agents (Claude Code, Cursor, Copilot, Gemini, Windsurf, Trae, Factory, Letta, OpenCode, Codex, Antigravity, Amp, Kilo, Roo, Goose)')
   .version(version)
   .argument('<source>', 'Git repo URL, GitHub shorthand (owner/repo), or direct path to skill')
   .option('-g, --global', 'Install skill globally (user-level) instead of project-level')

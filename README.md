@@ -28,6 +28,7 @@ All agents support the [Agent Skills](https://agentskills.io) open standard:
 | [Windsurf](https://windsurf.com)                      | ✅     |
 | [Trae](https://trae.ai)                               | ✅¹    |
 | [Factory Droid](https://factory.ai)                   | ✅     |
+| [Letta](https://www.letta.com)                        | ✅     |
 | [OpenCode](https://opencode.ai)                       | ✅     |
 | [Codex](https://openai.com/codex)                     | ✅     |
 | [Antigravity](https://antigravity.google)             | ✅     |
@@ -123,41 +124,43 @@ npx give-skill https://github.com/org/repo/tree/main/skills/custom
 
 ### Project Level (default)
 
-| Agent       | Path                       |
-| ----------- | -------------------------- |
-| Claude Code | `.claude/skills/<name>/`   |
-| Cursor      | `.cursor/skills/<name>/`   |
-| Copilot     | `.github/skills/<name>/`   |
-| Gemini CLI  | `.gemini/skills/<name>/`   |
-| Windsurf    | `.windsurf/skills/<name>/` |
-| Trae        | `.trae/skills/<name>/`     |
+| Agent         | Path                       |
+| ------------- | -------------------------- |
+| Claude Code   | `.claude/skills/<name>/`   |
+| Cursor        | `.cursor/skills/<name>/`   |
+| Copilot       | `.github/skills/<name>/`   |
+| Gemini CLI    | `.gemini/skills/<name>/`   |
+| Windsurf      | `.windsurf/skills/<name>/` |
+| Trae          | `.trae/skills/<name>/`     |
 | Factory Droid | `.factory/skills/<name>/`  |
-| OpenCode    | `.opencode/skill/<name>/`  |
-| Codex       | `.codex/skills/<name>/`    |
-| Antigravity | `.agent/skills/<name>/`    |
-| Amp         | `.agents/skills/<name>/`   |
-| Kilo Code   | `.kilocode/skills/<name>/` |
-| Roo Code    | `.roo/skills/<name>/`      |
-| Goose       | `.goose/skills/<name>/`    |
+| Letta         | `.skills/<name>/`          |
+| OpenCode      | `.opencode/skill/<name>/`  |
+| Codex         | `.codex/skills/<name>/`    |
+| Antigravity   | `.agent/skills/<name>/`    |
+| Amp           | `.agents/skills/<name>/`   |
+| Kilo Code     | `.kilocode/skills/<name>/` |
+| Roo Code      | `.roo/skills/<name>/`      |
+| Goose         | `.goose/skills/<name>/`    |
 
 ### Global Level (`--global`)
 
-| Agent       | Path                                   |
-| ----------- | -------------------------------------- |
-| Claude Code | `~/.claude/skills/<name>/`             |
-| Cursor      | `~/.cursor/skills/<name>/`             |
-| Copilot     | `~/.copilot/skills/<name>/`            |
-| Gemini CLI  | `~/.gemini/skills/<name>/`             |
-| Windsurf    | `~/.codeium/windsurf/skills/<name>/`   |
-| Trae        | Project-level only (SOLO mode)         |
+| Agent         | Path                                   |
+| ------------- | -------------------------------------- |
+| Claude Code   | `~/.claude/skills/<name>/`             |
+| Cursor        | `~/.cursor/skills/<name>/`             |
+| Copilot       | `~/.copilot/skills/<name>/`            |
+| Gemini CLI    | `~/.gemini/skills/<name>/`             |
+| Windsurf      | `~/.codeium/windsurf/skills/<name>/`   |
+| Trae          | Project-level only (SOLO mode)         |
 | Factory Droid | `~/.factory/skills/<name>/`            |
-| OpenCode    | `~/.config/opencode/skill/<name>/`     |
-| Codex       | `~/.codex/skills/<name>/`              |
-| Antigravity | `~/.gemini/antigravity/skills/<name>/` |
-| Amp         | `~/.config/agents/skills/<name>/`      |
-| Kilo Code   | `~/.kilocode/skills/<name>/`           |
-| Roo Code    | `~/.roo/skills/<name>/`                |
-| Goose       | `~/.config/goose/skills/<name>/`       |
+| Letta         | `~/.letta/skills/<name>/`              |
+| OpenCode      | `~/.config/opencode/skill/<name>/`     |
+| Codex         | `~/.codex/skills/<name>/`              |
+| Antigravity   | `~/.gemini/antigravity/skills/<name>/` |
+| Amp           | `~/.config/agents/skills/<name>/`      |
+| Kilo Code     | `~/.kilocode/skills/<name>/`           |
+| Roo Code      | `~/.roo/skills/<name>/`                |
+| Goose         | `~/.config/goose/skills/<name>/`       |
 
 ## Creating Skills
 
@@ -205,6 +208,7 @@ The CLI automatically searches these paths in a repository:
 - `.windsurf/skills/`
 - `.trae/skills/`
 - `.factory/skills/`
+- `.skills/` (Letta)
 - `.opencode/skill/`
 - `.codex/skills/`
 - `.agent/skills/`
