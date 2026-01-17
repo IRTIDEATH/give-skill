@@ -13,7 +13,8 @@ export type AgentType =
   | "windsurf"
   | "trae"
   | "factory"
-  | "letta";
+  | "letta"
+  | "qoder";
 
 export interface AgentConfig {
   name: string;

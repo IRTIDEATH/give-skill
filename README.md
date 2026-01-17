@@ -36,6 +36,7 @@ All agents support the [Agent Skills](https://agentskills.io) open standard:
 | [Kilo Code](https://kilocode.ai)                      | ✅     |
 | [Roo Code](https://roocode.com)                       | ✅     |
 | [Goose](https://block.github.io/goose)                | ✅     |
+| [Qoder](https://qoder.com)                            | ✅     |
 
 ¹ Trae only supports project-level installation (SOLO mode). Global installation is not available.
 
@@ -207,6 +208,7 @@ npx give-skill expo/skills -s pr-reviewer -g -a copilot -y
 | Kilo Code     | `.kilocode/skills/<name>/` | `~/.kilocode/skills/<name>/`           |
 | Roo Code      | `.roo/skills/<name>/`      | `~/.roo/skills/<name>/`                |
 | Goose         | `.goose/skills/<name>/`    | `~/.config/goose/skills/<name>/`       |
+| Qoder         | `.qoder/skills/<name>/`    | `~/.qoder/skills/<name>/`              |
 
 ## Creating Skills
 
@@ -262,6 +264,7 @@ The CLI automatically searches these paths in a repository:
 - `.kilocode/skills/`
 - `.roo/skills/`
 - `.goose/skills/`
+- `.qoder/skills/`
 
 If a folder matches an agent's skill directory, the CLI will find it.
 

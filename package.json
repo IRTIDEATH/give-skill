@@ -1,6 +1,6 @@
 {
   "name": "give-skill",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Universal skill installer for AI coding agents - Claude, Cursor, Copilot, and more",
   "keywords": [
     "agent-skills",

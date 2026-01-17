@@ -103,5 +103,12 @@
     "configDir": "~/.letta",
     "skillsDir": ".skills",
     "globalSkillsDir": "~/.letta/skills"
+  },
+  "qoder": {
+    "name": "qoder",
+    "displayName": "Qoder",
+    "configDir": "~/.qoder",
+    "skillsDir": ".qoder/skills",
+    "globalSkillsDir": "~/.qoder/skills"
   }
 }

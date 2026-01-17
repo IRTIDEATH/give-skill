@@ -4,11 +4,7 @@ import { parseSource } from "@/core/git/parser";
 import { cloneRepo, cleanupTempDir, getCommitHash } from "@/infrastructure/git-client";
 import { discoverSkills } from "@/core/skills/discovery";
 import { getSkillDisplayName } from "@/core/skills/parser";
-import {
-  installSkillForAgent,
-  isSkillInstalled,
-  getInstallPath,
-} from "@/infrastructure/installer";
+import { installSkillForAgent, isSkillInstalled, getInstallPath } from "@/infrastructure/installer";
 import { detectInstalledAgents } from "@/core/agents/detector";
 import { agents } from "@/core/agents/config";
 import { addSkill } from "@/core/state/global";
