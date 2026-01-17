@@ -1,6 +1,6 @@
 import * as p from '@clack/prompts';
 import pc from 'picocolors';
-import { performRemove } from '../../remove-service.js';
+import { performRemove } from '../../services/remove.js';
 
 export interface RemoveOptions {
   yes?: boolean;

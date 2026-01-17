@@ -1,6 +1,6 @@
 import * as p from '@clack/prompts';
 import pc from 'picocolors';
-import { performInstallation } from '../../install-service.js';
+import { performInstallation } from '../../services/install.js';
 
 export interface InstallOptions {
   global?: boolean;

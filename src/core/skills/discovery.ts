@@ -1,6 +1,6 @@
 import { readdir, readFile, stat } from 'fs/promises';
 import { join } from 'path';
-import type { Skill } from '../../types/index.js';
+import type { Skill } from '../../types/skills.js';
 import { agents } from '../agents/config.js';
 import { parseSkillMd, getSkillDisplayName } from './parser.js';
 

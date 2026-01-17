@@ -1,6 +1,6 @@
 import * as p from '@clack/prompts';
 import pc from 'picocolors';
-import { checkStatus, displayStatus } from '../../update-service.js';
+import { checkStatus, displayStatus } from '../../services/update.js';
 
 export interface StatusOptions {
   verbose?: boolean;

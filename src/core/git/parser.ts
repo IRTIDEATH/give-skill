@@ -1,4 +1,4 @@
-import type { ParsedSource } from '../../types/index.js';
+import type { ParsedSource } from '../../types/skills.js';
 
 export function parseSource(input: string): ParsedSource {
   const githubTreeMatch = input.match(/github\.com\/([^/]+)\/([^/]+)\/tree\/([^/]+)(?:\/(.+))?$/);

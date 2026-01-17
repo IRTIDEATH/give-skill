@@ -1,10 +1,13 @@
 import * as p from '@clack/prompts';
 import pc from 'picocolors';
 import { existsSync, rmSync } from 'fs';
-import { getAllSkills, getAllLocalSkills, findLocalSkillInstallations, removeSkillInstallation, removeLocalSkill } from '../core/state/index.js';
-import { agents } from '../core/agents/index.js';
-import { isValidSkillInstallation, resolveInstallationPath, showNoSkillsMessage, Plural } from '../utils.js';
-import type { SkillState } from '../types/index.js';
+import { getAllSkills, removeSkillInstallation } from '../core/state/global.js';
+import { getAllLocalSkills, findLocalSkillInstallations, removeLocalSkill } from '../core/state/local.js';
+import { agents } from '../core/agents/config.js';
+import { isValidSkillInstallation } from '../utils/validation.js';
+import { resolveInstallationPath } from '../utils/paths.js';
+import { showNoSkillsMessage, Plural } from '../utils/formatting.js';
+import type { SkillState } from '../types/state.js';
 
 interface RemoveResult {
   skillName: string;

@@ -1,9 +1,10 @@
 import { homedir } from 'os';
 import { join } from 'path';
 import { existsSync, readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync } from 'fs';
-import type { StateFile, SkillState, SkillInstallation, AgentType, Dirent } from '../../types/index.js';
+import type { StateFile, SkillState, SkillInstallation, Dirent } from '../../types/state.js';
+import type { AgentType } from '../../types/agents.js';
 import { agents } from '../agents/config.js';
-import { isValidSkillInstallation } from '../../utils.js';
+import { isValidSkillInstallation } from '../../utils/validation.js';
 
 const STATE_DIR = join(homedir(), '.give-skill');
 const STATE_FILE = join(STATE_DIR, 'state.json');

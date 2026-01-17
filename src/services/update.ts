@@ -1,21 +1,25 @@
 import * as p from '@clack/prompts';
 import pc from 'picocolors';
 import { join } from 'path';
-import { cloneRepo, cleanupTempDir, getLatestCommit, getCommitHash } from '../git.js';
-import { discoverSkills } from '../core/skills/index.js';
-import { installSkillForAgent } from '../installer.js';
+import { cloneRepo, cleanupTempDir, getLatestCommit, getCommitHash } from '../infrastructure/git-client.js';
+import { discoverSkills } from '../core/skills/discovery.js';
+import { installSkillForAgent } from '../infrastructure/installer.js';
 import {
   getAllSkills,
+  updateSkillCommit,
+  cleanOrphanedEntries
+} from '../core/state/global.js';
+import {
   getAllLocalSkills,
   findLocalSkillInstallations,
-  updateSkillCommit,
-  updateLocalSkillCommit,
-  removeSkillInstallation,
-  cleanOrphanedEntries
-} from '../core/state/index.js';
-import { agents } from '../core/agents/index.js';
-import { isValidSkillInstallation, resolveInstallationPath, showNoSkillsMessage, Plural } from '../utils.js';
-import type { SkillState } from '../types/index.js';
+  updateLocalSkillCommit
+} from '../core/state/local.js';
+import { removeSkillInstallation } from '../core/state/global.js';
+import { agents } from '../core/agents/config.js';
+import { isValidSkillInstallation } from '../utils/validation.js';
+import { resolveInstallationPath } from '../utils/paths.js';
+import { showNoSkillsMessage, Plural } from '../utils/formatting.js';
+import type { SkillState } from '../types/state.js';
 
 interface StatusResult {
   skillName: string;

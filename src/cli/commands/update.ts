@@ -1,6 +1,6 @@
 import * as p from '@clack/prompts';
 import pc from 'picocolors';
-import { performUpdate } from '../../update-service.js';
+import { performUpdate } from '../../services/update.js';
 
 export interface UpdateOptions {
   yes?: boolean;

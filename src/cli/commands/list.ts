@@ -1,6 +1,6 @@
 import * as p from '@clack/prompts';
 import pc from 'picocolors';
-import { listRemovableSkills } from '../../remove-service.js';
+import { listRemovableSkills } from '../../services/remove.js';
 
 export async function listCommand() {
   p.intro(pc.bgCyan(pc.black(' give-skill ')));
